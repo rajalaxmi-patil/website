@@ -1,3 +1,2 @@
-FROM ubuntu/apache2
-COPY . /var/www/html/
-ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+FROM httpd:2.4
+COPY . /usr/local/apache2/htdocs/
